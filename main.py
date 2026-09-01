@@ -1,5 +1,4 @@
-from src.tools.tools import web_search
+from src.pipelines.pipeline import run_research_pipeline
 
-res = web_search.invoke("Latest news on AI advancements in 2026.")
-
-print(res)
+topic = "The impact of Artificial Intelligence on the job market and employment trends in the next decade."
+run_research_pipeline(topic)
